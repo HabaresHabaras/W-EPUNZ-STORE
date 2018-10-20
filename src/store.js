@@ -2,7 +2,7 @@
 import createHistory from 'history/createBrowserHistory';
 
 // import our logger for redux
-import { createLogger } from 'redux-logger';
+// import { createLogger } from 'redux-logger';
 
 // import a library to handle async with redux
 import thunk from 'redux-thunk';
@@ -37,7 +37,7 @@ if (process.env.NODE_ENV === 'development') {
     enhancers.push(devToolsExtension());
   }
 
-  middleware.push(createLogger());
+  // middleware.push(createLogger());
 }
 
 // compose our middleware
