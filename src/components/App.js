@@ -20,13 +20,13 @@ const App = props => (
     {/* <MobileNav /> */}
 
     <Switch>
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={SignUpContainer} />
       <Route path="/cart" component={Cart} />
-      <Route path="/styles" component={StylesContainer} />
+      <Route path="/gloox" component={StylesContainer} />
       <Route path="/products" component={ProductsContainer} />
       <Route path="/checkout" component={CheckoutContainer} />
       <Route path="/login" component={LoginContainer} />
-      <Route path="/signUp" component={SignUpContainer} />
+      <Route path="/home" component={Home} />
 
       <Route
         path="/order-confirmation"

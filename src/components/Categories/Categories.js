@@ -51,7 +51,7 @@ class Categories extends Component {
               if (CatProduct.background_colour) {
                 background = CatProduct.background_colour;
               } else {
-                background = '#d9d9d9';
+                background = '#0000';
               }
 
               return (

@@ -8,9 +8,11 @@ const HeaderNav = () => (
     <nav className="primary-nav light">
       <Link to="/products">Products</Link>
       <Link to="/login">Login</Link>
+      <Link to="/gloox">Gloox</Link>
+
     </nav>
     <div className="logo light">
-      <Link to="/" className="logo-link">
+      <Link to="/home" className="logo-link">
         <span className="hide-content">Epunz</span>
         <div className="big-logo" aria-hidden="true">
         <svg id="svg" version="1.1" width="600" height="300.66666666666666" viewBox="0 0 400 148.66666666666666" xmlns="http://www.w3.org/2000/svg">

@@ -42,6 +42,7 @@ class LoginForm extends Component {
             .then(() =>{
                 this.props.dispatch(dispatch => {
                     dispatch({ type: GET_LOGIN_INFO});
+                    dispatch(push('/home'));
                 })
             })
             .catch(e => {

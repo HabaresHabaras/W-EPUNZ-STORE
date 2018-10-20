@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
 
 
-import { SUBMIT_SIGNUP_FORM } from '../../ducks/signUp';
+import { SUBMIT_SIGNUP_FORM, FORM_SUBMITED } from '../../ducks/signUp';
 
 var signUpStyle = {
     marginTop: '60px',
@@ -44,9 +44,15 @@ class SignUpForm extends Component {
         api
             .CreateCustomer(customerInformation)
 
-            .catch(e => {
-                console.log(e);
-            });
+    
+            .then(() =>{
+                this.props.dispatch(dispatch => {
+                    dispatch({ type: FORM_SUBMITED});
+                    dispatch(push('/login'));
+                })})
+                .catch(e => {
+                    console.log(e);
+                });
     };
     render() {
         return (

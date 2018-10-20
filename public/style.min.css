@@ -1137,6 +1137,43 @@ a:hover {
     text-decoration: underline
 }
 
+.special-footer-new {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+  }
+
+
+  .special-button-facebook {
+    background-color: rgb(76, 107, 175); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    margin:20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10%;
+}
+.special-button-instagram {
+    background-color: rgb(100, 69, 69); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin:20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12%;
+}
+
+
 .broken-body .light .scrolled .logo-link:active,
 .broken-body .light .scrolled .logo-link:hover,
 .broken-body .light .scrolled a:active,
@@ -3048,7 +3085,7 @@ nav a {
     display: flex;
     flex-direction: row;
     margin-bottom: 4.625rem;
-    background-color: #3875d7
+    background-color: #a5b9da
 }
 
 @media (max-width:52.8125em) {

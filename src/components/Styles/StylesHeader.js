@@ -13,7 +13,7 @@ const StylesHeader = ({ style, header }) => {
   let Header = null;
 
   switch (header) {
-    case 'Skates':
+    case 'Decks':
       Header = Skateboards;
       break;
     case 'Shirts':
@@ -43,7 +43,9 @@ const StylesHeader = ({ style, header }) => {
       <div className="nav-container">
         <nav className="primary-nav">
           <Link to="/products">Products</Link>
-          <Link to="/styles">Styles</Link>
+          <Link to="/login">Login</Link>
+          <Link to="/gloox">Gloox</Link>
+
         </nav>
         <div className="logo light">
       <Link to="/" className="logo-link">
