@@ -89,12 +89,6 @@ class SingleProduct extends Component {
               </div>
               <div className="product-description">
                 <h2>{product.name}</h2>
-                <p className="manufacturer">
-                  <span className="hide-content">Manufactured </span>By{' '}
-                  <span className="word-mark">
-                    I<span className="love">Love</span>Lamp
-                  </span>
-                </p>
                 {isThereACurrencyPrice()}
                 <div className="description">
                   <p className="hide-content">Product details:</p>
