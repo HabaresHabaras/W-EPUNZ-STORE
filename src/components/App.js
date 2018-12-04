@@ -18,14 +18,16 @@ import Footer from './global/Footer';
 const App = props => (
   <div>
     {/* <MobileNav /> */}
-
     <Switch>
+    <Route path="/login" component={LoginContainer} />
+
       <Route exact path="/" component={SignUpContainer} />
       <Route path="/cart" component={Cart} />
       <Route path="/gloox" component={StylesContainer} />
       <Route path="/products" component={ProductsContainer} />
       <Route path="/checkout" component={CheckoutContainer} />
-      <Route path="/login" component={LoginContainer} />
+
+
       <Route path="/home" component={Home} />
 
       <Route
@@ -43,5 +45,5 @@ const App = props => (
     <Footer />
   </div>
 );
-
 export default App;
+

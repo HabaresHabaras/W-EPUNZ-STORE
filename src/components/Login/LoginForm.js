@@ -22,6 +22,8 @@ var token = {
     password: 'wassssaaaa', 
 };
 
+var loggedIn = false;
+
 class LoginForm extends Component {
     handleKeyDown = function(e) {
         if (e.key === 'Enter' && e.shiftKey === false) {
@@ -42,11 +44,15 @@ class LoginForm extends Component {
             .then(() =>{
                 this.props.dispatch(dispatch => {
                     dispatch({ type: GET_LOGIN_INFO});
-                    dispatch(push('/home'));
+                    dispatch(push('/home'))
                 })
+                loggedIn = true;
             })
             .catch(e => {
                 console.log(e);
+                this.props.dispatch(dispatch => {
+                    dispatch(push('/'))
+                })
             });
     };
     render() {
